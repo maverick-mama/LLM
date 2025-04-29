@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset/normalize section (optional but helpful) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set root font and variables */
+:root {
+  --main-font: 'Montserrat', sans-serif;
+  --accent-color: #4fc3ac;
+  --soft-color: #1f2f4a;
+  --highlight: #c6bb80;
+}
+
+/* Body styles */
+body {
+  font-family: var(--main-font);
+  color: #4ba36a;
+  background-color: #ffffff;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--highlight);
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows it to breathe on smaller screens */
+  padding: 1rem 2rem;
+  color: #fff;
+  z-index: 2;
+}
+
+.logo img {
+  max-height: 170px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #c99c4b; /* highlight accent */
+}
+
+nav .logo {
+  flex: 1;
+}
+
+.nav-links {
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px; /* or adjust as needed */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 4rem auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #c99c4b;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fefefe;
+  color: #333;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--highlight);
+  color: #1f2f4a;
+}
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  color: #fff;
+  overflow: hidden;
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/mom-child-beach.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.20;
+  z-index: 0;
+  pointer-events: none;
+}
+.contact-form::before {
+  filter: blur(2px);
+}
+
+.banner {
+  background: url("images/stitch.png") repeat-x;
+  background-position: left calc(100% - 10px);
+  background-size: auto;
+  position: relative;
+  background-color: #1f2f4a; 
+  z-index: 1;
+
+
+}
+
+.needle-heart {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  width: 80px;
+  height: auto;
+  z-index: 5;
+  bottom: 6px;
+}
+
+.needle-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  background-color: #1f2f4a; 
+  padding: 0 11px 60px 50px; 
+  z-index: 5;
+}
+
+.ballerina-feature {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ballerina-feature img {
+  max-width: 350px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+.ballerina-feature {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ballerina-feature img {
+  max-width: 350px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ballerina-feature img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+
+}
+
+.mission-text {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #1f2f4a; /* Precious Blue */
+  border: 2px dashed #d4af37; /* Precious Soft Gold */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #f0f0f0; /* Soft, readable white */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.page-header {
+  font-family: 'Amsterdam Two', cursive;
+  font-size: 3rem;
+  color: var(--highlight);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: 'Amsterdam Two';
+  src: url('fonts/amsterdam-two-ttf.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.services-list {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #1f2f4a; /* Precious Blue */
+  border: 2px dashed #d4af37; /* Precious Soft Gold */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #f0f0f0; /* Soft, readable white */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.act-info {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #1f2f4a; /* Precious Blue */
+  border: 2px dashed #d4af37; /* Precious Soft Gold */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #f0f0f0; /* Soft, readable white */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-text {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #1f2f4a; /* Precious Blue */
+  border: 2px dashed #d4af37; /* Precious Soft Gold */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #f0f0f0; /* Soft, readable white */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+	text-align: center;
+}
+	
+ .text-left {
+	 text-align:left;
+}	
+	 
+ .h1-align-color {
+	text-align: center;
+	color:#4fc3ac;
+}
+	

@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset/normalize section (optional but helpful) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set root font and variables */
+:root {
+  --main-font: 'Montserrat', sans-serif;
+  --accent-color: #4fc3ac;
+  --soft-color: #1f2f4a;
+  --highlight: #c6bb80;
+}
+
+/* Body styles */
+body {
+  font-family: var(--main-font);
+  color: #4ba36a;
+  background-color: #1f2f4a;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--highlight);
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows it to breathe on smaller screens */
+  padding: 1rem 2rem;
+  color: #fff;
+  z-index: 2;
+}
+
+.logo img {
+  max-height: 170px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #c99c4b; /* highlight accent */
+}
+
+nav .logo {
+  flex: 1;
+}
+
+.nav-links {
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.banner {
+  background: url("images/stitch.png") repeat-x;
+  background-position: left calc(100% - 10px);
+  background-size: auto;
+  position: relative;
+  background-color: #1f2f4a; 
+  z-index: 1;
+
+
+}
+
+.needle-heart {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  width: 80px;
+  height: auto;
+  z-index: 5;
+  bottom: 6px;
+}
+
+.needle-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  background-color: #1f2f4a; /* Same as your banner background */
+  padding: 0 11px 60px 50px; /* adjust as needed */
+  z-index: 5;
+}
+
+/* About Page Specific */
+
+.about-section {
+  background-color: #1f2f4a; /* Full blue background */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mission-text {
+  background: url("images/Keys.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 900px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  border: 2px dashed #d4af37; 
+  position: relative;
+
+}
+
+.story-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.story-image {
+  flex: 1 1 400px;
+}
+
+.story-text {
+  flex: 2 1 500px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tattoo-section {
+  background-color: #0f172a;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.tattoo-section img {
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.about-header {
+  font-family: 'Amsterdam Two', cursive;
+  font-size: 3rem;
+  color: var(--highlight);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: 'Amsterdam Two';
+  src: url('fonts/amsterdam-two-ttf.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.story-section {
+  background-color: #1f2f4a;
+  padding: 60px 20px;
+}
+
+.story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+}
+
+.tattoo-image img {
+  max-width: 400px;
+  height: auto;
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+.mom-son-photo {
+  text-align: center;
+}
+
+.featured-photo {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.photo-caption {
+  margin-top: 0.5rem;
+  color: #d4af37;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+}
+
+.keys-and-text {
+  position: relative; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.story-keys {
+  position: absolute;
+  top: 269px; 
+  left: 5%;
+  transform: translateX(-50%);
+  max-width: 120px;
+  height: auto;
+}
+.story-text {
+  margin-top: -90px; 
+  margin-left: 100px;
+  max-width: 700px;
+  color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.image-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; 
+  margin-top: 60px;
+  flex-wrap: wrap; /* Just in case it needs to stack on mobile */
+}
+
+.image-column img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.mission-text-align {
+    text-align: center;
+    color: #ffffff;
+}
+
+.h1-align-color {
+	text-align: center;
+	color:#4fc3ac;
+}
