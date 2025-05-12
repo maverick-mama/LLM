@@ -1,0 +1,52 @@
+?? Here's what I’d recommend:
+1. Possible Site Navigation (based on the PDF’s messaging):
+plaintext
+Copy
+Edit
+Home
+About
+Grief Coaching / Services
+Resources
+Testimonials
+Blog / Stories
+Contact
+2. Pages to Build:
+Home: Emotional hook, tagline, CTA: "Find Support Today"
+
+About Jennifer / Mission: Bio, vision, the "Love Like Matthew" story
+
+Grief Coaching / Services: How she helps, what’s included, trauma-informed approach
+
+Resources: Downloadables, articles, support networks, links
+
+Testimonials: Quotes from those she’s helped
+
+Blog / Stories: Personal stories, healing journeys, legacy posts
+
+Contact: Email form, phone number, social links
+
+?? Consider a Home Page Fade-In Animation:
+Soft fade for logo and tagline:
+
+css
+Copy
+Edit
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+Sample header message:
+
+“Your story is just beginning… let’s write the next chapter together.”
+
+?? What You Can Do With This:
+Build structure now using these assumptions
+
+Drop in placeholders for content (e.g., "Awaiting final copy from client")
+
+Send her a mockup + nav layout and say:
+
+“Once I receive direction/content, I’ll finalize layout and flow. Here's what I'm working with based on the branding.”

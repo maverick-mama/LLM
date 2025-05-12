@@ -1,13 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-/* Reset/normalize section (optional but helpful) */
-* {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set root font and variables */
+
 :root {
   --main-font: 'Montserrat', sans-serif;
   --accent-color: #4fc3ac;
@@ -15,7 +14,7 @@
   --highlight: #c6bb80;
 }
 
-/* Body styles */
+
 body {
   font-family: var(--main-font);
   color: #4ba36a;
@@ -24,7 +23,7 @@ body {
   padding: 1rem;
 }
 
-/* Link styles */
+
 a {
   text-decoration: none;
   color: var(--accent-color);
@@ -34,19 +33,19 @@ a:hover {
   color: var(--highlight);
 }
 
-/* Responsive image */
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 
-/* Navigation styles */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* allows it to breathe on smaller screens */
+  flex-wrap: wrap; 
   padding: 1rem 2rem;
   color: #fff;
   z-index: 2;
@@ -71,7 +70,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #c99c4b; /* highlight accent */
+  color: #c99c4b; 
 }
 
 nav .logo {
@@ -108,15 +107,14 @@ nav .logo {
   position: absolute;
   bottom: 0;
   right: 3px;
-  background-color: #1f2f4a; /* Same as your banner background */
-  padding: 0 11px 60px 50px; /* adjust as needed */
+  background-color: #1f2f4a; 
+  padding: 0 11px 60px 50px; 
   z-index: 5;
 }
 
-/* About Page Specific */
 
 .about-section {
-  background-color: #1f2f4a; /* Full blue background */
+  background-color: #1f2f4a; 
   padding: 4rem 2rem;
   text-align: center;
   color: #ffffff;
@@ -256,7 +254,7 @@ nav .logo {
   align-items: flex-start;
   gap: 40px; 
   margin-top: 60px;
-  flex-wrap: wrap; /* Just in case it needs to stack on mobile */
+  flex-wrap: wrap; 
 }
 
 .image-column img {
