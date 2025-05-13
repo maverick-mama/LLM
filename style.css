@@ -22,6 +22,7 @@ body {
   background-color: #ffffff;
   line-height: 1.6;
   padding: 1rem;
+  background-repeat:no-repeat;
 }
 
 
@@ -430,7 +431,7 @@ nav .logo {
   font-weight: bold;
 }
 .services-page {
-  background: url('images/stairclock.png') no-repeat center top fixed;
+  background: url('images/stairclock.png') center top fixed;
   background-size: cover;
 }
 
@@ -459,4 +460,20 @@ nav .logo {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+.homepage-bg {
+  background: url('path/to/homebg.png') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 60px 0; /* or whatever fits your spacing needs */
 }

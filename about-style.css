@@ -20,7 +20,13 @@ body {
   color: #4ba36a;
   background-color: #1f2f4a;
   line-height: 1.6;
-  padding: 1rem;
+  padding: 0; /* better for layout spacing */
+  margin: 0;
+  background-image: url("images/aboutbg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -123,7 +129,7 @@ nav .logo {
 .mission-text {
   background: url("images/Keys.jpg") center center no-repeat;
   background-size: cover;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 900px;
@@ -131,7 +137,6 @@ nav .logo {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   border: 2px dashed #d4af37; 
   position: relative;
-
 }
 
 .story-section {
@@ -148,10 +153,19 @@ nav .logo {
 }
 
 .story-text {
-  flex: 2 1 500px;
-  color: #ffffff;
+  max-width: 700px;
+  padding: 2rem;
+  background-color: rgba(20, 46, 69, 0.95);
+  border-radius: 12px;
+  color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
   text-align: center;
+  margin: 0 auto;
 }
+
+
 
 .tattoo-section {
   background-color: #0f172a;
@@ -202,17 +216,6 @@ nav .logo {
   margin-top: 2rem;
 }
 
-.mom-son-photo {
-  text-align: center;
-}
-
-.featured-photo {
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-
 .photo-caption {
   margin-top: 0.5rem;
   color: #d4af37;
@@ -231,22 +234,13 @@ nav .logo {
 
 .story-keys {
   position: absolute;
-  top: 269px; 
+  top: 325px; 
   left: 5%;
   transform: translateX(-50%);
   max-width: 120px;
   height: auto;
 }
-.story-text {
-  margin-top: -90px; 
-  margin-left: 100px;
-  max-width: 700px;
-  color: #f0f0f0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.6;
-  text-align: center;
-}
+
 
 .image-columns {
   display: flex;
@@ -268,9 +262,60 @@ nav .logo {
 .mission-text-align {
     text-align: center;
     color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
 .h1-align-color {
 	text-align: center;
 	color:#4fc3ac;
+}
+#about-section {
+  background: url('images/aboutbg.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 2rem;
+}
+
+.about-text {
+  background-color: rgba(10, 10, 20, 0.8); 
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.about-hero {
+  background: none; 
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.story-content {
+ background-color: #142e45;
+  padding: 2rem;
+  max-width: 700px;
+  color: #f0f0f0;
+  border: 2px dashed #d4af37; 
+  border-radius: 12px;
+  text-align: center;
+}
+.section-title {
+  color: #4fc3ac;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
