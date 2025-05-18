@@ -155,7 +155,6 @@ nav .logo {
 .story-text {
   max-width: 700px;
   padding: 2rem;
-  background-color: rgba(20, 46, 69, 0.95);
   border-radius: 12px;
   color: #f0f0f0;
   font-family: 'Montserrat', sans-serif;
@@ -196,7 +195,6 @@ nav .logo {
 }
 
 .story-section {
-  background-color: #1f2f4a;
   padding: 60px 20px;
 }
 
@@ -306,7 +304,7 @@ nav .logo {
 }
 
 .story-content {
- background-color: #142e45;
+  background-color: rgba(20, 46, 69, 0.8);
   padding: 2rem;
   max-width: 700px;
   color: #f0f0f0;

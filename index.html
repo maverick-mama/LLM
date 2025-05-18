@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 <title>Homepage - Love Like Matthew</title>
+	
 </head>
 
 <body background="images/homebg.png" center fixed no-repeat;>
@@ -22,7 +23,7 @@
   </ul>
 </nav>
 <div class="needle-wrapper">
-  <img src="images/needle-heart-thread.png" class="needle-heart">
+  <img src="images/needle-heart-thread.png" class="needle-heart" alt="thread stitching">
 </div>
 	</div>
 	
@@ -33,7 +34,7 @@
 </video>
 	</div>
   </div>
-</div><br>
+<br>
 <div class="mission-text"><h1 class="h1-align-color">Welcome to Love Like Matthew</h1>
   <p style="font-style: italic; color: #4ba36a;"> Where Grief and Healing Walk Hand in Hand</p>
   <p class="text-left">&nbsp;At <span style="font-style: italic; color: #c6bb80;">Love Like Matthew</span>, we believe that grief deserves space, honesty, and compassion — not shallow fixes or silence.
@@ -49,9 +50,33 @@ Together, we’ll honor what was, embrace what is, and build what comes next.
 	    We help you honor your loss, find healing, and build a legacy of resilience and love.</p>
 	  <p><em><a href="about.html">Read more...</a></em>&nbsp;</p>
 </div>
-<div class="ballerina-feature">
-  <img src="images/ballerina.png" alt="Ballerina dancing">
-</div>
+<section class="ballet-poem-section">
+  <div class="ballet-wrapper">
+    <img src="images/ballet-image.png" alt="Ballet dancers performing expressive grief-inspired choreography" class="ballet-image">
+    <div class="poem-overlay">
+      <p><strong>Today I choose to live.</strong></p>
+      <p>Though my heart is broken, I still have so much love to give.</p>
+      <p>With every breath I take and every step I make, I honor you, Matthew.</p>
+      <p>My mission will be to tell my story which will be all about you.</p>
+      <p>You were my gift from God, God who has given me a burning desire – to tell the stories, the good and the bad in hopes it sparks a fire.</p>
+      <p>To the ones that are struggling, the Addict, the Griever and the Brokenhearted, I stand here today as proof that with God and hope there can be happiness.</p>
+      <p>Make a conscious decision to be an inspiration instead of the victim.</p>
+      <p><strong>I choose to Live!</strong></p>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const poem = document.querySelector('.poem-overlay');
+    const rect = poem.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight - 100) {
+      poem.classList.add('poem-visible');
+    }
+  });
+</script>
 	
 </body>
 </html>

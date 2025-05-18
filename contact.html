@@ -6,7 +6,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="contact-page">
 	<div class="banner">
 	<nav>
   <div class="logo">
@@ -28,18 +28,29 @@
 	<p class="contact-text">Reach Out — You Are Not Alone
 
 Whether you're looking for support, have questions about our services, or simply need someone to listen, we're here for you.
-Please feel free to send a message using the form below. Every story matters, every journey deserves to be honored, and every heart deserves to be heard.
+Please feel free to send a&nbsp; &nbsp;message using the form below. Every story matters, every journey deserves to be honored, and every heart deserves to be heard.
 
 We look forward to connecting with you.</p>
 	<section class="contact-form">
   <h2>Contact Us</h2>
-  <form>
-    <label>Name:</label><input type="text">
-    <label>Email:</label><input type="email">
-    <label>Message:</label><textarea></textarea>
-    <button type="submit">Send</button>
+  <p>Reach Out — You Are Not Alone</p>
+  <p>Whether you're looking for support, have questions about our services, or simply need someone to listen, we're here for you. Please feel free to send a message using the form below.</p>
+
+  <form action="contact_form.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
   </form>
 </section>
+
+
 
 </body>
 </html>
